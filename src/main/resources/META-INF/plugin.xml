@@ -1,19 +1,34 @@
 <idea-plugin>
-    <id>com.github.edejin.groupper</id>
+    <id>ua.in.dej.groupper</id>
     <name>Groupper</name>
-    <vendor>edejin</vendor>
+    <vendor email="efim@dej.in.ua" url="https://dej.in.ua">Dej Inc.</vendor>
 
     <!-- Product and plugin compatibility requirements -->
     <!-- https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="com.github.edejin.groupper.services.MyApplicationService"/>
-        <projectService serviceImplementation="com.github.edejin.groupper.services.MyProjectService"/>
+        <treeStructureProvider implementation="ua.in.dej.groupper.ProjectStructureProvider" order="last"/>
+        <applicationConfigurable instance="ua.in.dej.groupper.SettingConfigurable" displayName="Groupper" groupId="root"/>
     </extensions>
 
-    <applicationListeners>
-        <listener class="com.github.edejin.groupper.listeners.MyProjectManagerListener"
-                  topic="com.intellij.openapi.project.ProjectManagerListener"/>
-    </applicationListeners>
+    <actions>
+        <action id="ComposeAction" class="ua.in.dej.groupper.ComposeAction">
+            <add-to-group group-id="ProjectViewPopupMenu" anchor="first"/>
+        </action>
+        <action id="ComposeActionKey" class="ua.in.dej.groupper.Popup" text="Group popup" description="Group popup">
+            <add-to-group group-id="EditorActions" anchor="first"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt BACK_SLASH"/>
+        </action>
+        <action id="ua.in.dej.ua.in.dej.groupper.NextFile" class="ua.in.dej.groupper.NextFile" text="Next file"
+                description="Next file">
+            <add-to-group group-id="EditorActions" anchor="first"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt QUOTE"/>
+        </action>
+        <action id="ua.in.dej.ua.in.dej.groupper.PrevFile" class="ua.in.dej.groupper.PrevFile" text="Prev file"
+                description="Prev file">
+            <add-to-group group-id="EditorActions" anchor="first"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt SEMICOLON"/>
+        </action>
+    </actions>
 </idea-plugin>
