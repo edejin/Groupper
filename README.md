@@ -1,8 +1,8 @@
 # Groupper
 
 ![Build](https://github.com/edejin/Groupper/workflows/Build/badge.svg)
-[![Version](https://img.shields.io/jetbrains/plugin/v/PLUGIN_ID.svg)](https://plugins.jetbrains.com/plugin/PLUGIN_ID)
-[![Downloads](https://img.shields.io/jetbrains/plugin/d/PLUGIN_ID.svg)](https://plugins.jetbrains.com/plugin/PLUGIN_ID)
+[![Version](https://img.shields.io/jetbrains/plugin/v/10353-groupper.svg)](https://plugins.jetbrains.com/plugin/10353-groupper)
+[![Downloads](https://img.shields.io/jetbrains/plugin/d/10353-groupper.svg)](https://plugins.jetbrains.com/plugin/10353-groupper)
 
 <!-- Plugin description -->
 This plugin doesn't move/rename files or folders!
