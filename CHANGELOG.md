@@ -4,7 +4,8 @@
 
 ## [Unreleased]
 ### Added
- - Java as deps
+- Java as deps
+
 ### Changed
 - Minor updates
 
