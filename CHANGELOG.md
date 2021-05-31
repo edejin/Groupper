@@ -5,6 +5,8 @@
 ## [Unreleased]
 ### Added
  - Java as deps
+### Changed
+- Minor updates
 
 ## [1.6.1]
 ### Added
