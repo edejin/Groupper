@@ -9,7 +9,7 @@ This plugin doesn't move/rename files or folders!
 
 This plugin allow you to group files by name.
 
-You can group/ungroup files in folder by context menu or group/ungroup all files in project (`File -> Settings -> Groupper -> Groping always`)
+You can group/ungroup files in folder by context menu or group/ungroup all files in project (`File -> Settings -> Groupper -> Grouping always`)
 
 You can change pattern to any other value (default value: `[^\.]{1,}(?=\.)` )
 

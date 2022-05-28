@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>ua.in.dej.groupper</id>
     <name>Groupper</name>
-    <vendor email="efim@dej.in.ua" url="https://dej.in.ua">Dej Inc.</vendor>
+    <vendor email="efim@dezh.in" url="https://github.com/edejin/Groupper">Efim Dezhin</vendor>
 
     <!-- Product and plugin compatibility requirements -->
     <!-- https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->

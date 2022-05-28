@@ -3,6 +3,10 @@
 # Groupper Changelog
 
 ## [Unreleased]
+## [1.6.3]
+### Changed
+- Fix typo
+
 ## [1.6.2]
 ### Added
 - Java as deps
